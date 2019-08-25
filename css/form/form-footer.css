@@ -1,0 +1,125 @@
+/* Style-guide */
+
+.footer__logo-link:hover .footer__logo-svg,
+.footer__instagram-link:hover .footer__instagram-svg,
+.footer__facebook-link:hover .footer__facebook-svg,
+.footer__twitter-link:hover .footer__twitter-svg,
+.footer__copyright-link:hover .footer__html-academy-svg{
+    fill: #46c1ae;
+}
+
+.footer__logo-link:active .footer__logo-svg,
+.footer__instagram-link:active .footer__instagram-svg,
+.footer__facebook-link:active .footer__facebook-svg,
+.footer__twitter-link:active .footer__twitter-svg,
+.footer__copyright-link:active .footer__html-academy-svg{
+    opacity: 0.3;
+}
+
+/* END Style-guide */
+
+footer{
+    background-color: #f1f1f1;
+}
+
+.footer__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 260px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+.footer-logo{
+    display: none;
+}
+
+.footer__social{
+    width: 260px;
+    height: 81px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.footer__instagram-link,
+.footer__twitter-link{
+    display: inline-block;
+    height: 21px;
+}
+
+.footer__facebook-link{
+    display: inline-block;
+    height: 28px;
+}
+
+.footer__facebook-link,
+.footer__twitter-link{
+    margin-left: 35px;
+}
+
+.footer__copyright{
+    width: 260px;
+    height: 79px;
+    padding-top: 22px;
+    font-size: 19px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer__copyright-link{
+    display: inline-block;
+    height: 34px;
+}
+
+.footer__html-academy-svg{
+    margin-left: 25px;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__wrapper{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 668px;
+        height: 143px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-logo{
+        display: block;
+    }
+
+    .footer__logo-link{
+        display: inline-block;
+        height: 34px;
+    }
+
+    .footer__social,
+    .footer__copyright{
+        width: auto;
+        height: auto;
+        padding: 0;
+        border: none;
+    }
+
+    .footer-logo,
+    .footer__social,
+    .footer__copyright{
+        width: 33%;
+    }
+
+    .footer__copyright{
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__wrapper{
+        width: 1050px;
+    }
+}

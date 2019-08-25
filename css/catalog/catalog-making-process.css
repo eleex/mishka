@@ -1,0 +1,196 @@
+/* Style-guide */
+.making-process__button:hover {
+    color: #ffffff;
+    background-color: #444444;
+}
+
+.making-process__button:active {
+    color: #8d8d8d;
+}
+
+.making-process__wrapper:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* END Style-guide */
+
+.making-process__wrapper {
+    width: 260px;
+    margin: 30px auto 58px;
+}
+
+.making-process__title-wrapper {
+    padding: 25px 33px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+}
+
+.making-process__camera-svg {
+    flex-shrink: 0;
+    margin-right: 25px;
+}
+
+.making-process__title {
+    margin: 0;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.making-process__video {
+    display: block;
+    background-image: url("../../img/catalog/video-mobile.jpg");
+}
+
+.making-process__text-wrapper {
+    padding-top: 20px;
+    padding-bottom: 33px;
+    padding-left: 33px;
+    padding-right: 33px;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+}
+
+.making-process__text {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #444444;
+}
+
+.making-process__button {
+    width: 192px;
+    height: 52px;
+    border: 2px solid #444444;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: 17px;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #444444;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) and (min-resolution: 144dpi),
+    (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .making-process__video {
+        background-image: url("../../img/catalog/video-mobile@2x.jpg");
+        background-size: 260px 150px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .making-process__wrapper {
+        display: flex;
+        width: 668px;
+        margin: 53px auto 63px;
+        flex-direction: column;
+    }
+
+    .making-process__video {
+        width: 668px;
+        height: 455px;
+        background-image: url("../../img/catalog/video-tablet.jpg");
+        order: -1;
+    }
+
+    .making-process__title-wrapper {
+        padding: 40px;
+        border-bottom: none;
+    }
+
+    .making-process__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .making-process__camera-svg {
+        margin-right: 30px;
+    }
+
+    .making-process__text-wrapper {
+        padding-top: 0;
+        padding-bottom: 45px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-top: none;
+    }
+
+    .making-process__text {
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .making-process__button {
+        width: 584px;
+    }
+}
+
+@media (min-width: 768px) and (min-resolution: 144dpi),
+    (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .making-process__video {
+        background-image: url("../../img/catalog/video-tablet@2x.jpg");
+        background-size: 668px 455px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .making-process__wrapper {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 1050px;
+        margin: 57px auto 105px;
+        height: 455px;
+    }
+
+    .making-process__video {
+        width: 682px;
+        height: 455px;
+        background-image: url("../../img/catalog/video-desktop.jpg");
+        order: -1;
+    }
+
+    .making-process__title-wrapper {
+        width: 368px;
+        height: 172px;
+        padding-top: 45px;
+        padding-bottom: 31px;
+        padding-left: 80px;
+        padding-right: 80px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .making-process__camera-svg {
+        margin-bottom: 25px;
+    }
+
+    .making-process__text-wrapper {
+        width: 368px;
+        height: 283px;
+        padding-bottom: 60px;
+        padding-left: 80px;
+        padding-right: 55px;
+    }
+
+    .making-process__text {
+        margin-bottom: 50px;
+    }
+
+    .making-process__button {
+        width: 230px;
+    }
+}
+
+@media (min-width: 1200px) and (min-resolution: 144dpi),
+    (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    .making-process__video {
+        background-image: url("../../img/catalog/video-desktop@2x.jpg");
+        background-size: 682px 455px;
+    }
+}

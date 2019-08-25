@@ -1,0 +1,144 @@
+/* modal animation */
+
+@keyframes bounce {
+    0% { transform: translateY(-2000px);}
+    70% { transform: translateY(30px);}
+    90% { transform: translateY(-10px);}
+    100% { transform: translateY(0);}
+}
+
+.modal__show{
+    animation-name: bounce;
+    animation-duration: 0.6s;
+}
+
+/* end-code modal animation */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.modal__show {
+    display: block;
+}
+
+.modal__wrapper {
+    position: relative;
+    width: 100%;
+    height: 336px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: 1px solid #c7c7c7;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.modal__title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.modal__description {
+    margin: 0;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 15px;
+}
+
+.modal__input-wrapper {
+    display: flex;
+    width: 260px;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+
+.modal__input-span {
+    display: inline-block;
+    width: 82px;
+    height: 52px;
+    line-height: 48px;
+    border: 2px solid #ececec;
+    box-sizing: border-box;
+    color: #444444;
+}
+
+.modal__input-span:hover {
+    border: 2px solid #c7c7c7;
+}
+
+.modal__input:checked + .modal__input-span {
+    border: 2px solid #63d1bb;
+}
+
+.modal__subtim {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 260px;
+    height: 52px;
+    border: none;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: 17px;
+    color: #fff;
+    background-color: #63d1bb;
+}
+
+.modal__subtim:hover,
+.modal__subtim:focus {
+    background-color: #46c1ae;
+}
+
+@media screen and (min-width: 768px) {
+    .modal__wrapper {
+        width: 566px;
+    }
+
+    .modal__title {
+        font-size: 30px;
+    }
+
+    .modal__title-break {
+        display: none;
+    }
+
+    .modal__description {
+        font-size: 17px;
+        line-height: 17px;
+    }
+
+    .modal__input-wrapper{
+        width: 350px;
+    }
+
+    .modal__input-span{
+        width: 112px;
+    }
+
+    .modal__subtim{
+        width: 350px;
+    }
+}
